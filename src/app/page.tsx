@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar"
 import HeroSection from "@/components/hero-section"
+import ExperienceSection from "@/components/experience-section"
 import ProjectsSection from "@/components/projects-section"
 import SkillsSection from "@/components/skills-section"
 import EducationSection from "@/components/education-section"
@@ -17,7 +18,6 @@ export default function Home() {
       <SkillsSection />
       <EducationSection />
       <LanguagesSection />
-      <BlogSection />
       <ContactSection />
       <Footer />
     </main>

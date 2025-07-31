@@ -23,14 +23,14 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Full Stack Developer passionate about creating innovative solutions with modern technologies
+            Software Developer well versed with frontend,backend and mobile technologies,building robust and scalable applications.
           </p>
 
           <div className="flex justify-center space-x-4 mb-8">
 
             <Button asChild  size="lg">
               <a
-                href="https://linkedin.com/in/tanishq-pandey"
+                href="https://www.linkedin.com/in/pandey26tanishq/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2"
@@ -41,8 +41,15 @@ export default function HeroSection() {
             </Button>
 
             <Button asChild size="lg">
+              <a href="#contact" className="flex items-center space-x-2">
+                <Mail className="h-5 w-5" />
+                <span>Contact Me</span>
+              </a>
+            </Button>
+
+            <Button asChild size="lg">
               <a 
-               href="https://linkedin.com/in/tanishq-pandey"
+               href="https://github.com/tanishqpandey26"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2"
@@ -52,12 +59,6 @@ export default function HeroSection() {
               </a>
             </Button>
 
-            <Button asChild size="lg">
-              <a href="#contact" className="flex items-center space-x-2">
-                <Mail className="h-5 w-5" />
-                <span>Contact Me</span>
-              </a>
-            </Button>
           </div>
         </div>
       </div>

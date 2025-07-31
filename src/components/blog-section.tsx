@@ -73,7 +73,7 @@ export default function BlogSection() {
                   ))}
                 </div>
 
-                <Button variant="ghost" className="p-0 h-auto font-semibold text-primary">
+                <Button className="p-0 h-auto font-semibold text-primary">
                   Read More
                   <ArrowRight className="h-4 w-4 ml-1" />
                 </Button>

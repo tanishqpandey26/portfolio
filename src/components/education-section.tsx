@@ -4,27 +4,32 @@ import { GraduationCap, Calendar } from "lucide-react"
 
 const education = [
   {
-    degree: "Bachelor of Technology in Computer Science",
-    institution: "Indian Institute of Technology (IIT)",
+    degree: "B.Tech in Computer Engineering",
+    institution: "College of Technology, GBPUAT",
     duration: "2021-2025",
     grade: "CGPA:8.027",
     courses: [
       "Data Structures & Algorithms",
       "Database Management Systems",
+      "Data Mining",
+      "Cryptography",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Discrete Mathematics",
       "Software Engineering",
-      "Computer Networks",
+      "Computer Network",
       "Operating Systems",
     ],
   },
   {
-    degree: "Higher Secondary Certificate (12th)",
+    degree: "Senior School Certificate (XII)",
     institution: "Central Board of Secondary Education (CBSE)",
     duration: "2019-2020",
     grade: "94.4%",
-    courses: ["Mathematics", "Physics", "Chemistry", "Computer Science", "English"],
+    courses: ["Mathematics", "Physics", "Chemistry", "English", "Hindi"],
   },
   {
-    degree: "Secondary School Certificate (10th)",
+    degree: "Secondary School Certificate (X)",
     institution: "Central Board of Secondary Education (CBSE)",
     duration: "2017-2018",
     grade: "94%",

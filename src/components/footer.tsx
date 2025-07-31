@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail, Heart } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -11,6 +12,7 @@ export default function Footer() {
               Full Stack Developer passionate about creating innovative solutions with modern technologies.
             </p>
             <div className="flex space-x-4">
+
               <a
                 href="https://github.com/tanishqpandey26"
                 target="_blank"
@@ -19,6 +21,7 @@ export default function Footer() {
               >
                 <Github className="h-5 w-5" />
               </a>
+
               <a
                 href="https://linkedin.com/in/tanishq-pandey"
                 target="_blank"
@@ -27,38 +30,53 @@ export default function Footer() {
               >
                 <Linkedin className="h-5 w-5" />
               </a>
+
               <a
                 href="mailto:tanishqpandeyofficial@gmail.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail className="h-5 w-5" />
               </a>
+
+              <a
+                href="https://x.com/tanishqvatsa26"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <FaXTwitter className="h-5 w-5" />
+              </a>
+
             </div>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+
             <ul className="space-y-2">
+
               <li>
                 <a href="#home" className="text-muted-foreground hover:text-primary transition-colors">
                   Home
                 </a>
               </li>
+
               <li>
                 <a href="#projects" className="text-muted-foreground hover:text-primary transition-colors">
                   Projects
                 </a>
               </li>
+
               <li>
                 <a href="#skills" className="text-muted-foreground hover:text-primary transition-colors">
                   Skills
                 </a>
               </li>
+
               <li>
                 <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
                   Contact
                 </a>
               </li>
+
             </ul>
           </div>
 

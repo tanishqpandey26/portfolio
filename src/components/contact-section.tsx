@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Mail, Linkedin, MessageCircle } from "lucide-react"
+import { Mail, Linkedin, MessageCircle,  } from "lucide-react";
+
 
 export default function ContactSection() {
   return (
@@ -14,6 +15,24 @@ export default function ContactSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+            <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <div className="flex items-center space-x-3">
+                <div className="text-primary">
+                  <Mail className="h-6 w-6" />
+                </div>
+                <CardTitle>Email</CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground mb-4">Send me an email for any inquiries or collaborations</p>
+              <Button asChild className="w-full bg-transparent">
+                <a href="mailto:tanishqpandeyofficial@gmail.com">tanishqpandeyofficial@gmail.com</a>
+              </Button>
+            </CardContent>
+          </Card>
+
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
               <div className="flex items-center space-x-3">
@@ -33,22 +52,6 @@ export default function ContactSection() {
             </CardContent>
           </Card>
 
-          <Card className="hover:shadow-lg transition-shadow">
-            <CardHeader>
-              <div className="flex items-center space-x-3">
-                <div className="text-primary">
-                  <Mail className="h-6 w-6" />
-                </div>
-                <CardTitle>Email</CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground mb-4">Send me an email for any inquiries or collaborations</p>
-              <Button asChild className="w-full bg-transparent">
-                <a href="mailto:tanishqpandeyofficial@gmail.com">tanishqpandeyofficial@gmail.com</a>
-              </Button>
-            </CardContent>
-          </Card>
         </div>
 
         {/* <div className="text-center mt-12">

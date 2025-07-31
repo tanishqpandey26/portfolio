@@ -28,27 +28,24 @@ interface Project {
 }
 
 const projects: Project[] = [
-  {
-    id: "ecommerce-platform",
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with user authentication, payment integration, and admin dashboard.",
+
+   {
+    id: "payment anamoly",
+    title: "GraphGuard",
+    description: "Credit Card Payment Anomaly Detection using Graph Neural Networks",
     detailedDescription:
-      "This comprehensive e-commerce platform was built to provide a complete online shopping experience. The application features a modern, responsive design with advanced functionality including real-time inventory management, secure payment processing through Stripe, and a powerful admin dashboard for managing products, orders, and customers. The platform supports multiple user roles, advanced search and filtering capabilities, and includes features like wishlist management, order tracking, and automated email notifications.",
-    image: "/placeholder.svg?height=200&width=300&text=E-Commerce+Platform",
-    technologies: ["Next.js", "TypeScript", "MongoDB", "Stripe", "Tailwind CSS", "NextAuth.js"],
-    githubUrl: "https://github.com/tanishqpandey26/ecommerce-platform",
-    liveUrl: "https://ecommerce-demo.vercel.app",
+      "Collaboratively built using Next.js, TypeScript, and React Query on the frontend, and a Python-based backend integrating a Graph Neural Network model. Frontend deployed via Vercel, and backend (including the ML inference API) hosted on Render. Implemented using PyTorch Geometric (PyG) to train GNNs for detecting fraudulent transaction patterns from graph-structured data. Used Pandas and NumPy for data preprocessing and scikit-learn for model evaluation. Integrated user query risk scores into the UI for each transaction with React Query handling API state management.",
+    image: "/graphguard.png?height=200&width=300&text=E-Commerce+Platform",
+    technologies: ["Next.js", "TypeScript","Python", "MongoDB", "PyTorch","Pandas","Numpy","React Query", "Tailwind CSS"],
+    githubUrl: "https://github.com/tanishqpandey26/graphguard",
+    liveUrl: "https://graphguard.vercel.app/",
     type: "web",
     features: [
-      "User authentication and authorization",
-      "Product catalog with advanced search and filtering",
-      "Shopping cart and wishlist functionality",
-      "Secure payment processing with Stripe",
-      "Order management and tracking",
-      "Admin dashboard for inventory management",
+      "Used modern UI libraries such as Shadcn for interactive UI",
+
       "Responsive design for all devices",
-      "Email notifications for order updates",
     ],
+
     challenges: [
       "Implementing secure payment processing",
       "Managing complex state across multiple components",
@@ -61,31 +58,65 @@ const projects: Project[] = [
       "Database design for e-commerce applications",
       "User experience design for conversion optimization",
     ],
+
+    duration: "3 months",
+    teamSize: "3 developers",
+    status: "completed",
+  },
+
+  {
+    id: "trip planning website",
+    title: "Tripper",
+    description: "A comprehensive trip planning website using React.js for the frontend and Node.js, Express.js,and MongoDB for the backend.",
+    detailedDescription:
+      " Implemented an intuitive UI for users to create, manage, and share travel itineraries seamlessly. Integrated dynamic routing and efficient state management for smooth user experience. Optimized database queries to enhance performance and provide real-time updates on trip details. Deployed the application on Vercel for frontend and backend hosting.",
+    image: "/tripper.png?height=200&width=300&text=E-Commerce+Platform",
+    technologies: ["React.js", "Express.js","Node.js", "MongoDB", "JavaScript", "CSS"],
+    githubUrl: "https://github.com/tanishqpandey26/Tripper",
+    liveUrl: "https://tripper-ui.vercel.app/",
+    type: "web",
+    features: [
+      "User authentication and authorization",
+      "Itinerary management and tracking",
+      "Responsive design for all devices",
+    ],
+
+    challenges: [
+      "Implementing secure payment processing",
+      "Managing complex state across multiple components",
+      "Optimizing database queries for large product catalogs",
+      "Ensuring responsive design across all screen sizes",
+    ],
+    learnings: [
+      "Advanced Next.js patterns and optimization techniques",
+      "Payment gateway integration best practices",
+      "Database design for e-commerce applications",
+      "User experience design for conversion optimization",
+    ],
+
     duration: "3 months",
     teamSize: "Solo project",
     status: "completed",
   },
+
   {
-    id: "task-management-app",
-    title: "Task Management App",
-    description: "A React Native mobile app for task management with offline support and real-time synchronization.",
+    id: "medicine-reminder-app",
+    title: "Medmind",
+    description: " Developed a Cross-platform medicine reminder app for a seamless iOS and Android experience.",
     detailedDescription:
-      "A comprehensive task management mobile application designed to help users organize their daily activities efficiently. The app features offline-first architecture, allowing users to create, edit, and manage tasks even without internet connectivity. When connection is restored, the app automatically synchronizes data with the cloud. The application includes advanced features like task categorization, priority levels, due date reminders, collaborative task sharing, and detailed analytics to track productivity patterns.",
-    image: "/placeholder.svg?height=200&width=300&text=Task+Management+App",
-    technologies: ["React Native", "Firebase", "Redux", "AsyncStorage", "Push Notifications"],
-    githubUrl: "https://github.com/tanishqpandey26/task-manager",
-    downloadUrl: "https://github.com/tanishqpandey26/task-manager/releases",
+      " Implements custom medication scheduling with timely push notifications via Expo Notifications. Tracks refill needs and manages medicine supply with intuitive UI and smooth React Native Reanimated animations.Integrated Face ID/Touch ID for secure biometric authentication.Maintains local data persistence using AsyncStorage for offline-first support.Provides daily progress logs and dose history tracking with calendar integration for enhanced dose management. Enabled smooth screen transitions using React Navigation.",
+    image: "/medmind.jpeg?height=200&width=300&text=Task+Management+App",
+    technologies: ["React Native", "Expo", "TypeScript", "AsyncStorage", "Expo Notifications"],
+    githubUrl: "https://github.com/tanishqpandey26/Medmind",
+    downloadUrl: "https://drive.google.com/file/d/1ZuMHzCp2PdUCnve4B3ZSKwFllLpZE-Aw/view",
     type: "mobile",
     features: [
-      "Offline-first task management",
-      "Real-time synchronization with Firebase",
       "Task categorization and priority levels",
       "Due date reminders and push notifications",
-      "Collaborative task sharing",
-      "Productivity analytics and insights",
       "Dark/light theme support",
       "Cross-platform compatibility (iOS/Android)",
     ],
+
     challenges: [
       "Implementing offline-first architecture",
       "Managing data synchronization conflicts",
@@ -98,31 +129,28 @@ const projects: Project[] = [
       "Firebase real-time database optimization",
       "Mobile app performance optimization",
     ],
+
     duration: "4 months",
-    teamSize: "2 developers",
-    status: "maintained",
+    teamSize: "Solo project",
+    status: "completed",
   },
+
   {
-    id: "weather-dashboard",
-    title: "Weather Dashboard",
-    description: "A responsive weather dashboard with location-based forecasts and interactive charts.",
+    id: "blogging website",
+    title: "Cotlog",
+    description: "A Social blogging website created using React.js, JavaScript and Firebase.",
     detailedDescription:
-      "An intuitive weather dashboard that provides comprehensive weather information with beautiful visualizations. The application automatically detects user location or allows manual city selection to display current weather conditions, hourly forecasts, and 7-day weather predictions. Interactive charts show temperature trends, precipitation probability, and other meteorological data. The dashboard features a clean, modern interface with smooth animations and supports multiple units of measurement.",
-    image: "/placeholder.svg?height=200&width=300&text=Weather+Dashboard",
-    technologies: ["React", "Chart.js", "OpenWeather API", "Geolocation API", "CSS Modules"],
-    githubUrl: "https://github.com/tanishqpandey26/weather-dashboard",
-    liveUrl: "https://weather-dashboard-demo.vercel.app",
+      "Implemented Firebase Authentication for secure user login and access control.Utilized Firestore for real-time database updates, enabling instant post publishing and interactions. Designed a responsive and user-friendly UI to enhance the reading and writing experience. Deployed the application on Vercel for efficient and scalable hosting.",
+    image: "/cotlog.png?height=200&width=300&text=Weather+Dashboard",
+    technologies: ["React", "FireStore", "Firebase", "JavaScript", "CSS"],
+    githubUrl: "https://github.com/tanishqpandey26/Cotlog-social_blog_website",
+    liveUrl: "https://cotlog-social-blog-website.vercel.app/",
     type: "web",
     features: [
-      "Automatic location detection",
-      "Current weather conditions display",
-      "Hourly and 7-day weather forecasts",
-      "Interactive temperature and precipitation charts",
-      "Multiple cities comparison",
-      "Weather alerts and warnings",
-      "Responsive design for all devices",
-      "Multiple unit systems (Celsius/Fahrenheit)",
+      "Firebase Authentication for secure user login",
+      "Utilized Firestore for real-time database updates",
     ],
+
     challenges: [
       "Handling geolocation permissions and errors",
       "Creating responsive chart visualizations",
@@ -135,47 +163,12 @@ const projects: Project[] = [
       "Browser geolocation API implementation",
       "Performance optimization for data-heavy applications",
     ],
+
     duration: "2 months",
     teamSize: "Solo project",
     status: "completed",
   },
-  {
-    id: "devops-automation-tool",
-    title: "DevOps Automation Tool",
-    description: "A CLI tool for automating deployment processes with Docker and Kubernetes integration.",
-    detailedDescription:
-      "A powerful command-line interface tool designed to streamline DevOps workflows and automate complex deployment processes. The tool provides a unified interface for managing Docker containers, Kubernetes deployments, and CI/CD pipelines. It includes features for automated testing, building, and deploying applications across multiple environments. The tool supports configuration management, secret handling, and provides detailed logging and monitoring capabilities for deployment processes.",
-    image: "/placeholder.svg?height=200&width=300&text=DevOps+Tool",
-    technologies: ["Node.js", "Docker", "Kubernetes", "AWS CLI", "Commander.js", "YAML"],
-    githubUrl: "https://github.com/tanishqpandey26/devops-automation",
-    downloadUrl: "https://github.com/tanishqpandey26/devops-automation/releases",
-    type: "tool",
-    features: [
-      "Automated Docker container management",
-      "Kubernetes deployment automation",
-      "CI/CD pipeline integration",
-      "Multi-environment configuration management",
-      "Automated testing and quality checks",
-      "Secret and credential management",
-      "Detailed logging and monitoring",
-      "Rollback and recovery mechanisms",
-    ],
-    challenges: [
-      "Managing complex deployment configurations",
-      "Ensuring security in automated processes",
-      "Handling different cloud provider APIs",
-      "Creating intuitive CLI interface design",
-    ],
-    learnings: [
-      "Advanced Docker and Kubernetes concepts",
-      "CLI tool development best practices",
-      "Infrastructure as Code principles",
-      "DevOps security and compliance requirements",
-    ],
-    duration: "5 months",
-    teamSize: "3 developers",
-    status: "in-progress",
-  },
+
 ]
 
 export default function ProjectsSection() {
@@ -297,7 +290,8 @@ export default function ProjectsSection() {
                               {selectedProject.status.replace("-", " ")}
                             </Badge>
                           </div>
-                          <SheetDescription className="text-left">{selectedProject.description}</SheetDescription>
+                          <SheetDescription className="text-left">{selectedProject.description}
+                          </SheetDescription>
                         </SheetHeader>
 
                         <div className="mt-6 space-y-6">
@@ -404,7 +398,7 @@ export default function ProjectsSection() {
                           </div>
 
                           {/* Challenges */}
-                          <div>
+                          {/* <div>
                             <h3 className="text-lg font-semibold mb-3">Technical Challenges</h3>
                             <ul className="space-y-2">
                               {selectedProject.challenges.map((challenge, index) => (
@@ -414,10 +408,10 @@ export default function ProjectsSection() {
                                 </li>
                               ))}
                             </ul>
-                          </div>
+                          </div> */}
 
                           {/* Key Learnings */}
-                          <div>
+                          {/* <div>
                             <h3 className="text-lg font-semibold mb-3">Key Learnings</h3>
                             <ul className="space-y-2">
                               {selectedProject.learnings.map((learning, index) => (
@@ -427,7 +421,8 @@ export default function ProjectsSection() {
                                 </li>
                               ))}
                             </ul>
-                          </div>
+                          </div> */}
+
                         </div>
                       </>
                     )}
