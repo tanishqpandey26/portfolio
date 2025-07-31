@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss"
 
 const config: Config = {
-  darkMode: "class", // Required for next-themes
+ 
   content: ["./src/**/*.{ts,tsx,js,jsx,mdx}"],
   theme: {
     extend: {
@@ -14,6 +14,7 @@ const config: Config = {
     },
   },
   plugins: [],
+  darkMode: "class", 
 }
 
 export default config
