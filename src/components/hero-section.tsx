@@ -19,7 +19,7 @@ export default function HeroSection() {
           </div>
 
           <h1 className="text-4xl sm:text-6xl font-bold text-foreground mb-6">
-            Hi, I'm <span className="text-primary">Tanishq Pandey</span>
+            Hi, I&apos;m <span className="text-primary">Tanishq Pandey</span>
           </h1>
 
           <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">

@@ -10,7 +10,7 @@ export default function ContactSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Get In Touch</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            I'm always open to discussing new opportunities and interesting projects
+            I&apos;m always open to discussing new opportunities and interesting projects
           </p>
         </div>
 
