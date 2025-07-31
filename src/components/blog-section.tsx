@@ -73,7 +73,7 @@ export default function BlogSection() {
                   ))}
                 </div>
 
-                <Button className="p-0 h-auto font-semibold text-primary">
+                <Button variant="link" className="p-0 h-auto font-semibold">
                   Read More
                   <ArrowRight className="h-4 w-4 ml-1" />
                 </Button>
@@ -83,7 +83,7 @@ export default function BlogSection() {
         </div>
 
         <div className="text-center mt-12">
-          <Button  size="lg">
+          <Button variant="default" size="lg">
             View All Posts
           </Button>
         </div>

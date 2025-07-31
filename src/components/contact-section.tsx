@@ -27,7 +27,7 @@ export default function ContactSection() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">Send me an email for any inquiries or collaborations</p>
-              <Button asChild className="w-full bg-transparent">
+              <Button asChild variant="outline" className="w-full">
                 <a href="mailto:tanishqpandeyofficial@gmail.com">tanishqpandeyofficial@gmail.com</a>
               </Button>
             </CardContent>

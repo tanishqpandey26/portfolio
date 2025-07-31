@@ -272,7 +272,7 @@ export default function ProjectsSection() {
                 <Sheet>
                   <SheetTrigger asChild>
                     <Button
-                      
+                      variant="outline"
                       className="w-full justify-center"
                       onClick={() => setSelectedProject(project)}
                     >

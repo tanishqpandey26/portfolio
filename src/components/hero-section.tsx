@@ -47,18 +47,6 @@ export default function HeroSection() {
               </a>
             </Button>
 
-            <Button asChild size="lg">
-              <a 
-               href="https://github.com/tanishqpandey26"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-2"
-              >
-                <FaGithub className="h-5 w-5" />
-                <span>GitHub</span>
-              </a>
-            </Button>
-
           </div>
         </div>
       </div>

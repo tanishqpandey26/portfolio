@@ -4,7 +4,8 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import { useTheme } from "next-themes"
-import ThemeSwitch from "./ThemeSwitch" // 🔁 Import the new toggle component
+import ThemeSwitch from "./ThemeSwitch"
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -41,14 +42,12 @@ export default function Navbar() {
 
           {/* Icons: Theme Switch + Mobile Menu */}
           <div className="flex items-center space-x-4">
-            {/* 🔁 Replaced Button-based toggle with your ThemeSwitch */}
-            <div className="text-foreground hover:text-primary cursor-pointer text-xl">
-              <ThemeSwitch />
-            </div>
+            <ThemeSwitch />
 
             {/* Mobile menu toggle */}
             <div className="md:hidden">
-              <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)}>
+              <Button
+              variant="ghost"  size="icon" onClick={() => setIsOpen(!isOpen)}>
                 {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
               </Button>
             </div>

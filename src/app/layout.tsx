@@ -25,11 +25,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="bg-gray-50 dark:bg-slate-800">
+      <body>
         <Providers>
-          <main className="px-2 md:px-3 prose prose-xl prose-slate dark:prose-invert mx-auto">
           {children}
-          </main>
         </Providers>
       </body>
     </html>

@@ -24,15 +24,15 @@ const education = [
   {
     degree: "Senior School Certificate (XII)",
     institution: "Central Board of Secondary Education (CBSE)",
-    duration: "2019-2020",
-    grade: "94.4%",
+    duration: "2020",
+    grade: "Grade: 94.4%",
     courses: ["Mathematics", "Physics", "Chemistry", "English", "Hindi"],
   },
   {
     degree: "Secondary School Certificate (X)",
     institution: "Central Board of Secondary Education (CBSE)",
-    duration: "2017-2018",
-    grade: "94%",
+    duration: "2018",
+    grade: "Grade: 94%",
     courses: ["Mathematics", "Science", "Social Studies", "English", "Hindi"],
   },
 ]
@@ -62,27 +62,30 @@ export default function EducationSection() {
                       <p className="text-lg font-semibold text-primary">{edu.institution}</p>
                     </div>
                   </div>
-                  <div className="text-right">
-                    <div className="flex items-center text-muted-foreground mb-1">
-                     
-                      <span className="text-sm">{edu.duration}</span>
-                    </div>
-                    <p className="text-sm font-semibold text-green-600">{edu.grade}</p>
-                  </div>
                 </div>
               </CardHeader>
+
               <CardContent>
-                <div>
-                  <h4 className="font-semibold mb-2">Relevant Courses:</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {edu.courses.map((course) => (
-                      <Badge key={course} variant="outline">
-                        {course}
-                      </Badge>
-                    ))}
+               <div>
+                  <div className="text-left w-1/2 p-4">
+                   <div className="flex items-center text-muted-foreground mb-1">
+                    <span className="text-sm">{edu.duration}</span>
+                    <p className="text-sm ml-4">{edu.grade}</p>
+                   </div>
                   </div>
-                </div>
-              </CardContent>
+
+    <h4 className="font-semibold mb-2">Relevant Courses:</h4>
+    <div className="flex flex-wrap gap-2">
+      {edu.courses.map((course) => (
+        <Badge key={course} variant="outline">
+          {course}
+        </Badge>
+      ))}
+    </div>
+  </div>
+</CardContent>
+
+
             </Card>
           ))}
         </div>
