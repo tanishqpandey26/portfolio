@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Mail, Linkedin, MessageCircle,  } from "lucide-react";
+import VisitorsCount from "./visitors-count"
 
 
 export default function ContactSection() {
@@ -14,7 +15,7 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
             <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
@@ -51,6 +52,8 @@ export default function ContactSection() {
               </Button>
             </CardContent>
           </Card>
+
+          <VisitorsCount />
 
         </div>
 
